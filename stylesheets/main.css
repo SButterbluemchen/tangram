@@ -530,6 +530,7 @@ body {
 .medium-triangle {
   -webkit-transform: translate(0%, 0%) rotate(-45deg);
           transform: translate(0%, 0%) rotate(-45deg);
+<<<<<<< HEAD
 }
 
 .small-triangle-1 {
@@ -589,6 +590,27 @@ body {
 }
 /*# sourceMappingURL=main.css.map */
 =======
+=======
+}
+
+.small-triangle-1 {
+  -webkit-transform: translate(0.5%, 0%) rotate(-45deg);
+          transform: translate(0.5%, 0%) rotate(-45deg);
+}
+
+.small-triangle-2 {
+  -webkit-transform: translate(-35%, -35.5%) rotate(45deg);
+          transform: translate(-35%, -35.5%) rotate(45deg);
+}
+
+.small-square {
+  -webkit-transform: translate(-18%, 70%) rotate(45deg);
+          transform: translate(-18%, 70%) rotate(45deg);
+}
+
+.parallelogram {
+<<<<<<< HEAD
+>>>>>>> 217b23f (chicked shape created (#6))
   transform: translate(0%, 0%) rotate(-45deg);
 }
 
@@ -624,4 +646,48 @@ body {
 .pyramid .parallelogram {
   transform: rotate(90deg);
 }/*# sourceMappingURL=main.css.map */
+<<<<<<< HEAD
 >>>>>>> 7c36f02 (pyramids created)
+=======
+=======
+  -webkit-transform: translate(0%, 0%) rotate(-45deg);
+          transform: translate(0%, 0%) rotate(-45deg);
+}
+
+.big-triangle-1 {
+  -webkit-transform: translate(0, 0) rotate(-45deg);
+          transform: translate(0, 0) rotate(-45deg);
+}
+
+.big-triangle-2 {
+  -webkit-transform: translate(0, 0) rotate(-45deg);
+          transform: translate(0, 0) rotate(-45deg);
+}
+
+.medium-triangle {
+  -webkit-transform: translate(20%, -50%) rotate(90deg);
+          transform: translate(20%, -50%) rotate(90deg);
+}
+
+.small-triangle-1 {
+  -webkit-transform: translate(-85%, -85%) rotate(180deg);
+          transform: translate(-85%, -85%) rotate(180deg);
+}
+
+.small-triangle-2 {
+  -webkit-transform: translate(-24%, 46%) rotate(90deg);
+          transform: translate(-24%, 46%) rotate(90deg);
+}
+
+.small-square {
+  -webkit-transform: translate(-35%, 0) rotate(-45deg);
+          transform: translate(-35%, 0) rotate(-45deg);
+}
+
+.parallelogram {
+  -webkit-transform: translate(0%, 35%) rotate(45deg);
+          transform: translate(0%, 35%) rotate(45deg);
+}
+/*# sourceMappingURL=main.css.map */
+>>>>>>> c36236f (chicked shape created (#6))
+>>>>>>> 217b23f (chicked shape created (#6))
