@@ -442,6 +442,13 @@ body {
   position: absolute;
 }
 
+.container-general {
+  position: relative;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
 .big-triangle-1 {
   -webkit-clip-path: polygon(50% 50%, 0% 0%, 0px 100%);
           clip-path: polygon(50% 50%, 0% 0%, 0px 100%);
