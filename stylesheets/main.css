@@ -380,7 +380,7 @@ a:hover, a:active, a:focus {
  */
 body {
   color: #222222;
-  font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font: normal/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 /**
@@ -442,6 +442,18 @@ body {
   width: 1px;
 }
 
+@media only screen and (min-width: 600px) {
+  .list-choice {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+.list-choice li {
+  list-style: none;
+  max-width: 200px;
+  text-align: center;
+}
+
 .container-general {
   position: relative;
   margin-inline: auto;
@@ -454,14 +466,12 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 100px;
-  transition: all 1s linear 0.1s;
 }
 
 .canvas {
   width: 25%;
   height: 25%;
   position: absolute;
-  transition: all 1s linear 0.1s;
 }
 
 .big-triangle-1 {
@@ -506,6 +516,7 @@ body {
   background-color: #5656b1;
 }
 
+<<<<<<< HEAD
 .big-triangle-1 {
   -webkit-transform: translate(0%, 35%) rotate(45deg);
           transform: translate(0%, 35%) rotate(45deg);
@@ -583,29 +594,34 @@ body {
 
 .big-triangle-1 {
   transform: translate(50.5%, 70%) rotate(45deg);
+=======
+.btn {
+  border: 1px solid black;
+  padding: 5px 15px;
+  border-radius: 10px;
+  color: black;
+>>>>>>> 5c8a74c (pyramid shape created)
 }
 
-.big-triangle-2 {
+.pyramid .big-triangle-1 {
+  transform: translate(50.5%, 70%) rotate(45deg);
+}
+.pyramid .big-triangle-2 {
   transform: translate(50.5%, 70%) rotate(-135deg);
 }
-
-.medium-triangle {
+.pyramid .medium-triangle {
   transform: translate(-100%, 0%) rotate(90deg);
 }
-
-.small-triangle-1 {
+.pyramid .small-triangle-1 {
   transform: rotate(-90deg);
 }
-
-.small-triangle-2 {
+.pyramid .small-triangle-2 {
   transform: rotate(90deg);
 }
-
-.small-square {
+.pyramid .small-square {
   transform: rotate(-90deg);
 }
-
-.parallelogram {
+.pyramid .parallelogram {
   transform: rotate(90deg);
 }/*# sourceMappingURL=main.css.map */
 >>>>>>> 7c36f02 (pyramids created)
