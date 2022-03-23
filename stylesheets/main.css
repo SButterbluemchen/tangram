@@ -436,12 +436,6 @@ body {
   width: 1px;
 }
 
-.canvas {
-  width: 25%;
-  height: 25%;
-  position: absolute;
-}
-
 .container-general {
   position: relative;
   margin-inline: auto;
@@ -450,6 +444,14 @@ body {
   display: flex;
   justify-content: center;
   padding-top: 100px;
+  transition: all 1s linear 0.1s;
+}
+
+.canvas {
+  width: 25%;
+  height: 25%;
+  position: absolute;
+  transition: all 1s linear 0.1s;
 }
 
 .big-triangle-1 {
@@ -520,4 +522,32 @@ body {
 
 .parallelogram {
   transform: translate(0%, 0%) rotate(-45deg);
+}
+
+.big-triangle-1 {
+  transform: translate(50.5%, 70%) rotate(45deg);
+}
+
+.big-triangle-2 {
+  transform: translate(50.5%, 70%) rotate(-135deg);
+}
+
+.medium-triangle {
+  transform: translate(-100%, 0%) rotate(90deg);
+}
+
+.small-triangle-1 {
+  transform: rotate(-90deg);
+}
+
+.small-triangle-2 {
+  transform: rotate(90deg);
+}
+
+.small-square {
+  transform: rotate(-90deg);
+}
+
+.parallelogram {
+  transform: rotate(90deg);
 }/*# sourceMappingURL=main.css.map */
