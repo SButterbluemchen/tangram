@@ -1,14 +1,18 @@
 
 .canvas {
-    width: 200px;
-    height: 200px;
-    position: absolute;
+  width: 25%;
+  height: 25%;
+  position: absolute;
 }
+
 .container-general {
   position: relative;
-  padding: 5rem;
+  margin-inline: auto;
+  width: 80%;
+  aspect-ratio: 1;
   display: flex;
   justify-content: center;
+  padding-top: 100px;
 }
 
 .big-triangle-1 {

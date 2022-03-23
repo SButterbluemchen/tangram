@@ -437,16 +437,19 @@ body {
 }
 
 .canvas {
-  width: 200px;
-  height: 200px;
+  width: 25%;
+  height: 25%;
   position: absolute;
 }
 
 .container-general {
   position: relative;
-  padding: 5rem;
+  margin-inline: auto;
+  width: 80%;
+  aspect-ratio: 1;
   display: flex;
   justify-content: center;
+  padding-top: 100px;
 }
 
 .big-triangle-1 {
@@ -489,4 +492,32 @@ body {
   -webkit-clip-path: polygon(75% 75%, 75% 25%, 100% 50%, 100% 100%);
           clip-path: polygon(75% 75%, 75% 25%, 100% 50%, 100% 100%);
   background-color: #5656b1;
+}
+
+.big-triangle-1 {
+  transform: translate(0%, 35%) rotate(45deg);
+}
+
+.big-triangle-2 {
+  transform: translate(0%, 35%) rotate(-135deg);
+}
+
+.medium-triangle {
+  transform: translate(0%, 0%) rotate(-45deg);
+}
+
+.small-triangle-1 {
+  transform: translate(0.5%, 0%) rotate(-45deg);
+}
+
+.small-triangle-2 {
+  transform: translate(-35%, -35.5%) rotate(45deg);
+}
+
+.small-square {
+  transform: translate(-18%, 70%) rotate(45deg);
+}
+
+.parallelogram {
+  transform: translate(0%, 0%) rotate(-45deg);
 }/*# sourceMappingURL=main.css.map */

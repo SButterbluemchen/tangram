@@ -1,0 +1,27 @@
+.big-triangle-1{
+    transform: translate(0%,35%) rotate(45deg);
+}
+
+.big-triangle-2 {
+    transform: translate(0%,35%) rotate(-135deg);
+}
+
+.medium-triangle {
+    transform: translate(0%,0%) rotate(-45deg);
+}
+
+.small-triangle-1{
+  transform: translate(0.5%,0%) rotate(-45deg);
+}
+
+.small-triangle-2 {
+  transform: translate(-35%,-35.5%) rotate(45deg);
+}
+
+.small-square {
+  transform: translate(-18%,70%) rotate(45deg);
+}
+
+.parallelogram {
+  transform: translate(0%,0%) rotate(-45deg);
+}
