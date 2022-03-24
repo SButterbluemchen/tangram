@@ -1,23 +1,29 @@
 .hammer {
-.medium-triangle {
-    transform: translate(0%,-50%) rotate(180deg) ;
-}
-.big-triangle-1 {
+  .medium-triangle {
+    transform: translate(0%, -50%) rotate(180deg);
+  }
+
+  .big-triangle-1 {
     transform: rotate(90deg);
-}
-.big-triangle-2 {
-    transform: translate(50%,-50%);
-}
-.small-triangle-1 {
+  }
+
+  .big-triangle-2 {
+    transform: translate(50%, -50%);
+  }
+
+  .small-triangle-1 {
     transform: translate(-50%, 0%) rotate(135deg);
-}
-.parallelogram {
-    transform: translate(-15.5%,0%) rotate(45deg);
-}
-.small-triangle-2 {
-    transform: translate(20%,70%) rotate(225deg);
-}
-.small-square{
-    transform: translate(-15%,105%) rotate(45deg);
-}
+  }
+
+  .parallelogram {
+    transform: translate(-15.5%, 0%) rotate(45deg);
+  }
+
+  .small-triangle-2 {
+    transform: translate(20%, 70%) rotate(225deg);
+  }
+  
+  .small-square {
+    transform: translate(-15%, 105%) rotate(45deg);
+  }
 }
