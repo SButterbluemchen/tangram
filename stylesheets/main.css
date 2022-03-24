@@ -554,10 +554,10 @@ body {
 }
 
 .btn {
-  border: 2px solid black;
+  border: 2px;
   padding: 5px 15px;
   border-radius: 10px;
-  color: white;
+  color: black;
   background: -webkit-gradient(linear, left top, right top, from(#c60606), color-stop(35%, #09791a), to(#ffef00));
   background: linear-gradient(90deg, #c60606 0%, #09791a 35%, #ffef00 100%);
   font-size: 2rem;
