@@ -1,16 +1,19 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
-
 .btn {
   border: 2px solid black;
   padding: 5px 15px;
   border-radius: 10px;
   color:white;
-  background: linear-gradient(90deg, rgba(198,6,6,1) 0%, rgba(9,121,26,1) 35%, rgba(255,239,0,1) 100%);
+  background: black;
   font-size: 2rem;
   &:hover{
     background-color: grey;
-    
+    text-decoration: none;
   }
+}
+
+.active {
+  background: linear-gradient(90deg, rgba(198,6,6,1) 0%, rgba(9,121,26,1) 35%, rgba(255,239,0,1) 100%);
 }

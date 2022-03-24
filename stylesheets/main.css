@@ -529,11 +529,16 @@ body {
   padding: 5px 15px;
   border-radius: 10px;
   color: white;
-  background: linear-gradient(90deg, #c60606 0%, #09791a 35%, #ffef00 100%);
+  background: black;
   font-size: 2rem;
 }
 .btn:hover {
   background-color: grey;
+  text-decoration: none;
+}
+
+.active {
+  background: linear-gradient(90deg, #c60606 0%, #09791a 35%, #ffef00 100%);
 }
 
 .tree .big-triangle-1 {
@@ -622,4 +627,26 @@ body {
 }
 .hammer .small-square {
   transform: translate(-15%, 105%) rotate(45deg);
+}
+
+.dancer .big-triangle-1 {
+  transform: translate(74%, 88%) rotate(10deg);
+}
+.dancer .big-triangle-2 {
+  transform: translate(0, 25%) rotate(190deg);
+}
+.dancer .medium-triangle {
+  transform: translate(63%, 72%) rotate(-125deg);
+}
+.dancer .small-triangle-1 {
+  transform: translate(-41%, 167%) rotate(100deg);
+}
+.dancer .small-triangle-2 {
+  transform: translate(66%, 130%) rotate(-50deg);
+}
+.dancer .small-square {
+  transform: translate(0, -26%) rotate(10deg);
+}
+.dancer .parallelogram {
+  transform: translate(6%, -10%) rotate(55deg);
 }/*# sourceMappingURL=main.css.map */
