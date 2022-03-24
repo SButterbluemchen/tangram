@@ -743,4 +743,39 @@ body {
   -webkit-transform: translate(6%, -10%) rotate(55deg);
           transform: translate(6%, -10%) rotate(55deg);
 }
+
+.tee-shirt .big-triangle-1 {
+  -webkit-transform: translate() rotate();
+          transform: translate() rotate();
+}
+
+.tee-shirt .big-triangle-2 {
+  -webkit-transform: translate() rotate();
+          transform: translate() rotate();
+}
+
+.tee-shirt .medium-triangle {
+  -webkit-transform: translate() rotate();
+          transform: translate() rotate();
+}
+
+.tee-shirt .small-triangle-1 {
+  -webkit-transform: translate() rotate();
+          transform: translate() rotate();
+}
+
+.tee-shirt .small-triangle-2 {
+  -webkit-transform: translate() rotate();
+          transform: translate() rotate();
+}
+
+.tee-shirt .small-square {
+  -webkit-transform: translate() rotate();
+          transform: translate() rotate();
+}
+
+.tee-shirt .parallelogram {
+  -webkit-transform: translate() rotate();
+          transform: translate() rotate();
+}
 /*# sourceMappingURL=main.css.map */
