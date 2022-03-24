@@ -1,0 +1,29 @@
+.pyramid {
+  .big-triangle-1 {
+    transform: translate(50.5%, 70%) rotate(45deg);
+  }
+
+  .big-triangle-2 {
+    transform: translate(50.5%, 70%) rotate(-135deg);
+  }
+
+  .medium-triangle {
+    transform: translate(-100%, 0%) rotate(90deg);
+  }
+
+  .small-triangle-1 {
+    transform: rotate(-90deg);
+  }
+
+  .small-triangle-2 {
+    transform: rotate(90deg);
+  }
+
+  .small-square {
+    transform: rotate(-90deg);
+  }
+
+  .parallelogram {
+    transform: rotate(90deg);
+  }
+}
