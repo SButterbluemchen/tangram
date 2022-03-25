@@ -779,38 +779,38 @@ body {
           transform: translate(-45%, -80%) rotate(45deg);
 }
 
-.tee-shirt .big-triangle-1 {
-  -webkit-transform: translate() rotate();
-          transform: translate() rotate();
+.point .big-triangle-1 {
+  -webkit-transform: translate(-25%, 54%) rotate(180deg);
+          transform: translate(-25%, 54%) rotate(180deg);
 }
 
-.tee-shirt .big-triangle-2 {
-  -webkit-transform: translate() rotate();
-          transform: translate() rotate();
+.point .big-triangle-2 {
+  -webkit-transform: translate(25%, 5%) rotate(90deg);
+          transform: translate(25%, 5%) rotate(90deg);
 }
 
-.tee-shirt .medium-triangle {
-  -webkit-transform: translate() rotate();
-          transform: translate() rotate();
+.point .medium-triangle {
+  -webkit-transform: translate(-25%, 5%) rotate(0deg);
+          transform: translate(-25%, 5%) rotate(0deg);
 }
 
-.tee-shirt .small-triangle-1 {
-  -webkit-transform: translate() rotate();
-          transform: translate() rotate();
+.point .small-triangle-1 {
+  -webkit-transform: translate(49%, 78%) rotate(-90deg);
+          transform: translate(49%, 78%) rotate(-90deg);
 }
 
-.tee-shirt .small-triangle-2 {
-  -webkit-transform: translate() rotate();
-          transform: translate() rotate();
+.point .small-triangle-2 {
+  -webkit-transform: translate(0%, -70%) rotate(90deg);
+          transform: translate(0%, -70%) rotate(90deg);
 }
 
-.tee-shirt .small-square {
-  -webkit-transform: translate(0, 0) rotate();
-          transform: translate(0, 0) rotate();
+.point .small-square {
+  -webkit-transform: translate(15%, 170%) rotate(-45deg);
+          transform: translate(15%, 170%) rotate(-45deg);
 }
 
-.tee-shirt .parallelogram {
-  -webkit-transform: translate() rotate();
-          transform: translate() rotate();
+.point .parallelogram {
+  -webkit-transform: translate(-50%, 78%) rotate(0deg);
+          transform: translate(-50%, 78%) rotate(0deg);
 }
 /*# sourceMappingURL=main.css.map */
