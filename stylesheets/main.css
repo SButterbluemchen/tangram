@@ -44,7 +44,8 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -188,9 +189,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
@@ -198,9 +199,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -209,9 +210,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -229,7 +230,8 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -261,9 +263,10 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type=checkbox],
-[type=radio] {
-  box-sizing: border-box;
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -272,8 +275,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -281,7 +284,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type=search] {
+[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -291,7 +294,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type=search]::-webkit-search-decoration {
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -342,7 +345,8 @@ template {
  * Set up a decent box model on the root element
  */
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /**
@@ -354,7 +358,8 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 /**
@@ -364,6 +369,7 @@ a {
   color: #e50050;
   text-decoration: none;
 }
+
 a:hover, a:active, a:focus {
   color: #222222;
   text-decoration: underline;
@@ -384,7 +390,7 @@ body {
  */
 .clearfix::after {
   clear: both;
-  content: "";
+  content: '';
   display: table;
 }
 
@@ -439,25 +445,52 @@ body {
 }
 
 .list-choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  gap: 3rem;
 }
+
 @media only screen and (min-width: 600px) {
   .list-choice {
-    flex-direction: row;
-    justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
+
 .list-choice li {
   list-style: none;
   max-width: 200px;
   text-align: center;
 }
 
-h1 {
-  padding-top: 1rem;
+body {
+  background-color: azure;
+}
+
+.main-layout {
+  height: 100vh;
+  text-align: center;
+}
+
+.main-layout h1 {
+  padding-top: 2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 15px;
+  text-align: left;
 }
 
 #container-general {
@@ -465,9 +498,16 @@ h1 {
   margin-inline: auto;
   width: 40%;
   aspect-ratio: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 1s linear 0.1s;
   transition: all 1s linear 0.1s;
   padding-bottom: 3rem;
 }
@@ -481,6 +521,7 @@ h1 {
   width: 100%;
   height: 100%;
   position: absolute;
+  -webkit-transition: all 1s linear 0.1s;
   transition: all 1s linear 0.1s;
 }
 @media only screen and (min-width: 600px) {
@@ -533,17 +574,17 @@ h1 {
 }
 
 .btn {
-  border: 2px solid black;
-  padding: 0.3rem 0.8rem;
-  border-radius: 1rem;
-  color: white;
-  background: black;
-  font-size: 0.8rem;
+  border: 2px;
+  padding: 5px 15px;
+  border-radius: 10px;
+  color: black;
+  background: -webkit-gradient(linear, left top, right top, from(#c60606), color-stop(35%, #09791a), to(#ffef00));
+  background: linear-gradient(90deg, #c60606 0%, #09791a 35%, #ffef00 100%);
+  font-size: 2rem;
+  -webkit-box-shadow: 0, 2px, 5px black;
+          box-shadow: 0, 2px, 5px black;
 }
-@media only screen and (min-width: 600px) {
-  .btn {
-    font-size: 2rem;
-  }
+
 .btn:hover {
   background-color: grey;
   text-decoration: none;
@@ -554,111 +595,282 @@ h1 {
 }
 
 .tree .big-triangle-1 {
-  transform: translate(0%, 35%) rotate(45deg);
+  -webkit-transform: translate(0%, 35%) rotate(45deg);
+          transform: translate(0%, 35%) rotate(45deg);
 }
+
 .tree .big-triangle-2 {
-  transform: translate(0%, 35%) rotate(-135deg);
+  -webkit-transform: translate(0%, 35%) rotate(-135deg);
+          transform: translate(0%, 35%) rotate(-135deg);
 }
+
 .tree .medium-triangle {
-  transform: translate(0%, 0%) rotate(-45deg);
+  -webkit-transform: translate(0%, 0%) rotate(-45deg);
+          transform: translate(0%, 0%) rotate(-45deg);
 }
+
 .tree .small-triangle-1 {
-  transform: translate(0.5%, 0%) rotate(-45deg);
+  -webkit-transform: translate(0.5%, 0%) rotate(-45deg);
+          transform: translate(0.5%, 0%) rotate(-45deg);
 }
+
 .tree .small-triangle-2 {
-  transform: translate(-35%, -35.5%) rotate(45deg);
+  -webkit-transform: translate(-35%, -35.5%) rotate(45deg);
+          transform: translate(-35%, -35.5%) rotate(45deg);
 }
+
 .tree .small-square {
-  transform: translate(-18%, 70%) rotate(45deg);
+  -webkit-transform: translate(-18%, 70%) rotate(45deg);
+          transform: translate(-18%, 70%) rotate(45deg);
 }
+
 .tree .parallelogram {
-  transform: translate(0%, 0%) rotate(-45deg);
+  -webkit-transform: translate(0%, 0%) rotate(-45deg);
+          transform: translate(0%, 0%) rotate(-45deg);
 }
 
 .chicken .big-triangle-1 {
-  transform: translate(0, 0) rotate(-45deg);
+  -webkit-transform: translate(0, 0) rotate(-45deg);
+          transform: translate(0, 0) rotate(-45deg);
 }
+
 .chicken .big-triangle-2 {
-  transform: translate(0, 0) rotate(-45deg);
+  -webkit-transform: translate(0, 0) rotate(-45deg);
+          transform: translate(0, 0) rotate(-45deg);
 }
+
 .chicken .medium-triangle {
-  transform: translate(20%, -50%) rotate(90deg);
+  -webkit-transform: translate(20%, -49%) rotate(90deg);
+          transform: translate(20%, -49%) rotate(90deg);
 }
+
 .chicken .small-triangle-1 {
-  transform: translate(-85%, -85%) rotate(180deg);
+  -webkit-transform: translate(-85%, -85%) rotate(180deg);
+          transform: translate(-85%, -85%) rotate(180deg);
 }
+
 .chicken .small-triangle-2 {
-  transform: translate(-24%, 46%) rotate(90deg);
+  -webkit-transform: translate(-24%, 46%) rotate(90deg);
+          transform: translate(-24%, 46%) rotate(90deg);
 }
+
 .chicken .small-square {
-  transform: translate(-35%, 0) rotate(-45deg);
+  -webkit-transform: translate(-35%, 0) rotate(-45deg);
+          transform: translate(-35%, 0) rotate(-45deg);
 }
+
 .chicken .parallelogram {
-  transform: translate(0%, 35%) rotate(45deg);
+  -webkit-transform: translate(0%, 35%) rotate(45deg);
+          transform: translate(0%, 35%) rotate(45deg);
 }
 
 .pyramids .big-triangle-1 {
-  transform: translate(50.5%, 70%) rotate(45deg);
+  -webkit-transform: translate(50.5%, 70%) rotate(45deg);
+          transform: translate(50.5%, 70%) rotate(45deg);
 }
+
 .pyramids .big-triangle-2 {
-  transform: translate(50.5%, 70%) rotate(-135deg);
+  -webkit-transform: translate(50.5%, 70%) rotate(-135deg);
+          transform: translate(50.5%, 70%) rotate(-135deg);
 }
+
 .pyramids .medium-triangle {
-  transform: translate(-100%, 0%) rotate(90deg);
+  -webkit-transform: translate(-100%, 0%) rotate(90deg);
+          transform: translate(-100%, 0%) rotate(90deg);
 }
+
 .pyramids .small-triangle-1 {
-  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
+
 .pyramids .small-triangle-2 {
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
+
 .pyramids .small-square {
-  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
+
 .pyramids .parallelogram {
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .hammer .medium-triangle {
-  transform: translate(0%, -50%) rotate(180deg);
+  -webkit-transform: translate(0%, -50%) rotate(180deg);
+          transform: translate(0%, -50%) rotate(180deg);
 }
+
 .hammer .big-triangle-1 {
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
+
 .hammer .big-triangle-2 {
-  transform: translate(50%, -50%);
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
 }
+
 .hammer .small-triangle-1 {
-  transform: translate(-50%, 0%) rotate(135deg);
+  -webkit-transform: translate(-50%, 0%) rotate(135deg);
+          transform: translate(-50%, 0%) rotate(135deg);
 }
+
 .hammer .parallelogram {
-  transform: translate(-15.5%, 0%) rotate(45deg);
+  -webkit-transform: translate(-15.5%, 0%) rotate(45deg);
+          transform: translate(-15.5%, 0%) rotate(45deg);
 }
+
 .hammer .small-triangle-2 {
-  transform: translate(20%, 70%) rotate(225deg);
+  -webkit-transform: translate(20%, 70%) rotate(225deg);
+          transform: translate(20%, 70%) rotate(225deg);
 }
+
 .hammer .small-square {
-  transform: translate(-15%, 105%) rotate(45deg);
+  -webkit-transform: translate(-15%, 105%) rotate(45deg);
+          transform: translate(-15%, 105%) rotate(45deg);
 }
 
 .dancer .big-triangle-1 {
-  transform: translate(74%, 88%) rotate(10deg);
+  -webkit-transform: translate(74%, 88%) rotate(10deg);
+          transform: translate(74%, 88%) rotate(10deg);
 }
+
 .dancer .big-triangle-2 {
-  transform: translate(0, 25%) rotate(190deg);
+  -webkit-transform: translate(0, 25%) rotate(190deg);
+          transform: translate(0, 25%) rotate(190deg);
 }
+
 .dancer .medium-triangle {
-  transform: translate(63%, 72%) rotate(-125deg);
+  -webkit-transform: translate(63%, 71%) rotate(-125deg);
+          transform: translate(63%, 71%) rotate(-125deg);
 }
+
 .dancer .small-triangle-1 {
-  transform: translate(-41%, 167%) rotate(100deg);
+  -webkit-transform: translate(-41%, 167%) rotate(100deg);
+          transform: translate(-41%, 167%) rotate(100deg);
 }
+
 .dancer .small-triangle-2 {
-  transform: translate(66%, 130%) rotate(-50deg);
+  -webkit-transform: translate(66%, 130%) rotate(-50deg);
+          transform: translate(66%, 130%) rotate(-50deg);
 }
+
 .dancer .small-square {
-  transform: translate(0, -26%) rotate(10deg);
+  -webkit-transform: translate(0, -26%) rotate(10deg);
+          transform: translate(0, -26%) rotate(10deg);
 }
+
 .dancer .parallelogram {
-  transform: translate(6%, -10%) rotate(55deg);
-}/*# sourceMappingURL=main.css.map */
+  -webkit-transform: translate(6%, -10%) rotate(55deg);
+          transform: translate(6%, -10%) rotate(55deg);
+}
+
+.tee-shirt .big-triangle-1 {
+  -webkit-transform: translate(-10%, -45%) rotate(225deg);
+          transform: translate(-10%, -45%) rotate(225deg);
+}
+
+.tee-shirt .big-triangle-2 {
+  -webkit-transform: translate(60%, 25%) rotate(-225deg);
+          transform: translate(60%, 25%) rotate(-225deg);
+}
+
+.tee-shirt .medium-triangle {
+  -webkit-transform: translate(60%, -9%) rotate(315deg);
+          transform: translate(60%, -9%) rotate(315deg);
+}
+
+.tee-shirt .small-triangle-1 {
+  -webkit-transform: translate(95%, -80%) rotate(225deg);
+          transform: translate(95%, -80%) rotate(225deg);
+}
+
+.tee-shirt .small-triangle-2 {
+  -webkit-transform: translate(25%, -80%) rotate(-315deg);
+          transform: translate(25%, -80%) rotate(-315deg);
+}
+
+.tee-shirt .small-square {
+  -webkit-transform: translate(-10%, -45%) rotate(45deg);
+          transform: translate(-10%, -45%) rotate(45deg);
+}
+
+.tee-shirt .parallelogram {
+  -webkit-transform: translate(-45%, -80%) rotate(45deg);
+          transform: translate(-45%, -80%) rotate(45deg);
+}
+
+.point .big-triangle-1 {
+  -webkit-transform: translate(-25%, 54%) rotate(180deg);
+          transform: translate(-25%, 54%) rotate(180deg);
+}
+
+.point .big-triangle-2 {
+  -webkit-transform: translate(25%, 5%) rotate(90deg);
+          transform: translate(25%, 5%) rotate(90deg);
+}
+
+.point .medium-triangle {
+  -webkit-transform: translate(-25%, 5%) rotate(0deg);
+          transform: translate(-25%, 5%) rotate(0deg);
+}
+
+.point .small-triangle-1 {
+  -webkit-transform: translate(49%, 78%) rotate(-90deg);
+          transform: translate(49%, 78%) rotate(-90deg);
+}
+
+.point .small-triangle-2 {
+  -webkit-transform: translate(0%, -70%) rotate(90deg);
+          transform: translate(0%, -70%) rotate(90deg);
+}
+
+.point .small-square {
+  -webkit-transform: translate(15%, 170%) rotate(-45deg);
+          transform: translate(15%, 170%) rotate(-45deg);
+}
+
+.point .parallelogram {
+  -webkit-transform: translate(-50%, 78%) rotate(0deg);
+          transform: translate(-50%, 78%) rotate(0deg);
+}
+
+.baot .big-triangle-1 {
+  -webkit-transform: translate(-90%, -30%) rotate(180deg);
+          transform: translate(-90%, -30%) rotate(180deg);
+}
+
+.baot .big-triangle-2 {
+  -webkit-transform: translate(-90%, -30%) rotate(0deg);
+          transform: translate(-90%, -30%) rotate(0deg);
+}
+
+.baot .medium-triangle {
+  -webkit-transform: translate(-35%, -16%) rotate(135deg);
+          transform: translate(-35%, -16%) rotate(135deg);
+}
+
+.baot .small-triangle-1 {
+  -webkit-transform: translate(-40%, 20%) rotate(45deg);
+          transform: translate(-40%, 20%) rotate(45deg);
+}
+
+.baot .small-triangle-2 {
+  -webkit-transform: translate(-5%, 20%) rotate(-45deg);
+          transform: translate(-5%, 20%) rotate(-45deg);
+}
+
+.baot .small-square {
+  -webkit-transform: translate(-40%, 20%) rotate(45deg);
+          transform: translate(-40%, 20%) rotate(45deg);
+}
+
+.baot .parallelogram {
+  -webkit-transform: translate(-34%, 20%) rotate(-224deg);
+          transform: translate(-34%, 20%) rotate(-224deg);
+}
+/*# sourceMappingURL=main.css.map */

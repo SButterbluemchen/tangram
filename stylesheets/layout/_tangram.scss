@@ -1,5 +1,14 @@
+body{
+  background-color: azure;
+}
+.main-layout {
+  height: 100vh;
+  text-align: center;
   h1 {
-    padding-top: 1rem;
+    padding-top: 2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 15px;
+    text-align: left;
   }
 
 #container-general {

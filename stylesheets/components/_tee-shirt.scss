@@ -1,0 +1,28 @@
+.tee-shirt {
+    .big-triangle-1 {
+        transform: translate(-10%,-45%) rotate(225deg);
+       }
+     
+     .big-triangle-2 {
+         transform: translate(60%,25%) rotate(-225deg);
+       }
+     .medium-triangle {
+         transform: translate(60%,-9%) rotate(315deg);
+       }
+     
+       .small-triangle-1{
+         transform: translate(95%,-80%) rotate(225deg);
+       }
+       .small-triangle-2 {
+         transform: translate(25%,-80%) rotate(-315deg);
+        
+       }
+       .small-square {
+         transform: translate(-10%,-45%) rotate(45deg);
+         
+       }
+       .parallelogram {
+         transform: translate(-45%,-80%) rotate(45deg);
+       
+    }
+  }
