@@ -745,41 +745,6 @@ body {
 }
 
 .tee-shirt .big-triangle-1 {
-  -webkit-transform: translate() rotate();
-          transform: translate() rotate();
-}
-
-.tee-shirt .big-triangle-2 {
-  -webkit-transform: translate() rotate();
-          transform: translate() rotate();
-}
-
-.tee-shirt .medium-triangle {
-  -webkit-transform: translate() rotate();
-          transform: translate() rotate();
-}
-
-.tee-shirt .small-triangle-1 {
-  -webkit-transform: translate() rotate();
-          transform: translate() rotate();
-}
-
-.tee-shirt .small-triangle-2 {
-  -webkit-transform: translate() rotate();
-          transform: translate() rotate();
-}
-
-.tee-shirt .small-square {
-  -webkit-transform: translate(5%, 0) rotate(90deg);
-          transform: translate(5%, 0) rotate(90deg);
-}
-
-.tee-shirt .parallelogram {
-  -webkit-transform: translate() rotate();
-          transform: translate() rotate();
-}
-
-.tee-shirt .big-triangle-1 {
   -webkit-transform: translate(-10%, -45%) rotate(225deg);
           transform: translate(-10%, -45%) rotate(225deg);
 }
@@ -812,5 +777,40 @@ body {
 .tee-shirt .parallelogram {
   -webkit-transform: translate(-45%, -80%) rotate(45deg);
           transform: translate(-45%, -80%) rotate(45deg);
+}
+
+.tee-shirt .big-triangle-1 {
+  -webkit-transform: translate() rotate();
+          transform: translate() rotate();
+}
+
+.tee-shirt .big-triangle-2 {
+  -webkit-transform: translate() rotate();
+          transform: translate() rotate();
+}
+
+.tee-shirt .medium-triangle {
+  -webkit-transform: translate() rotate();
+          transform: translate() rotate();
+}
+
+.tee-shirt .small-triangle-1 {
+  -webkit-transform: translate() rotate();
+          transform: translate() rotate();
+}
+
+.tee-shirt .small-triangle-2 {
+  -webkit-transform: translate() rotate();
+          transform: translate() rotate();
+}
+
+.tee-shirt .small-square {
+  -webkit-transform: translate(0, 0) rotate();
+          transform: translate(0, 0) rotate();
+}
+
+.tee-shirt .parallelogram {
+  -webkit-transform: translate() rotate();
+          transform: translate() rotate();
 }
 /*# sourceMappingURL=main.css.map */
