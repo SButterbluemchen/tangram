@@ -622,8 +622,8 @@ body {
 }
 
 .chicken .medium-triangle {
-  -webkit-transform: translate(20%, -50%) rotate(90deg);
-          transform: translate(20%, -50%) rotate(90deg);
+  -webkit-transform: translate(20%, -49%) rotate(90deg);
+          transform: translate(20%, -49%) rotate(90deg);
 }
 
 .chicken .small-triangle-1 {
@@ -727,8 +727,8 @@ body {
 }
 
 .dancer .medium-triangle {
-  -webkit-transform: translate(63%, 72%) rotate(-125deg);
-          transform: translate(63%, 72%) rotate(-125deg);
+  -webkit-transform: translate(63%, 71%) rotate(-125deg);
+          transform: translate(63%, 71%) rotate(-125deg);
 }
 
 .dancer .small-triangle-1 {
@@ -819,5 +819,40 @@ body {
 .point .parallelogram {
   -webkit-transform: translate(-50%, 78%) rotate(0deg);
           transform: translate(-50%, 78%) rotate(0deg);
+}
+
+.baot .big-triangle-1 {
+  -webkit-transform: translate(-90%, -30%) rotate(180deg);
+          transform: translate(-90%, -30%) rotate(180deg);
+}
+
+.baot .big-triangle-2 {
+  -webkit-transform: translate(-90%, -30%) rotate(0deg);
+          transform: translate(-90%, -30%) rotate(0deg);
+}
+
+.baot .medium-triangle {
+  -webkit-transform: translate(-35%, -16%) rotate(135deg);
+          transform: translate(-35%, -16%) rotate(135deg);
+}
+
+.baot .small-triangle-1 {
+  -webkit-transform: translate(-40%, 20%) rotate(45deg);
+          transform: translate(-40%, 20%) rotate(45deg);
+}
+
+.baot .small-triangle-2 {
+  -webkit-transform: translate(-5%, 20%) rotate(-45deg);
+          transform: translate(-5%, 20%) rotate(-45deg);
+}
+
+.baot .small-square {
+  -webkit-transform: translate(-40%, 20%) rotate(45deg);
+          transform: translate(-40%, 20%) rotate(45deg);
+}
+
+.baot .parallelogram {
+  -webkit-transform: translate(-34%, 20%) rotate(-224deg);
+          transform: translate(-34%, 20%) rotate(-224deg);
 }
 /*# sourceMappingURL=main.css.map */

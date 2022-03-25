@@ -1,0 +1,26 @@
+.baot {
+    .big-triangle-1 {
+      transform: translate(-90%,-30%) rotate(180deg);
+    }
+  
+    .big-triangle-2 {
+      transform: translate(-90%,-30%) rotate(0deg);
+    }
+    .medium-triangle {
+        transform: translate(-35%,-16%) rotate(135deg);
+    }
+  
+    .small-triangle-1 {
+        transform: translate(-40%,20%) rotate(45deg);
+    }
+    .small-triangle-2 {
+        transform: translate(-5%,20%) rotate(-45deg);
+    }
+    .small-square {
+        transform: translate(-40%,20%) rotate(45deg);
+    }
+    .parallelogram {
+        transform: translate(-34%,20%) rotate(-224deg);
+    }
+  }
+  
