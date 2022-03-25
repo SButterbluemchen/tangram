@@ -544,7 +544,6 @@ h1 {
   .btn {
     font-size: 2rem;
   }
-}
 .btn:hover {
   background-color: grey;
   text-decoration: none;
