@@ -770,8 +770,8 @@ body {
 }
 
 .tee-shirt .small-square {
-  -webkit-transform: translate() rotate();
-          transform: translate() rotate();
+  -webkit-transform: translate(5%, 0) rotate(90deg);
+          transform: translate(5%, 0) rotate(90deg);
 }
 
 .tee-shirt .parallelogram {
