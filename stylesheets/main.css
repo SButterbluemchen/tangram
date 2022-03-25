@@ -374,7 +374,9 @@ a:hover, a:active, a:focus {
  */
 body {
   color: #222222;
-  font: normal/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font: normal/1 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 1rem;
+  text-align: center;
 }
 
 /**
@@ -440,8 +442,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0;
-  gap: 3rem;
+  gap: 2rem;
 }
 @media only screen and (min-width: 600px) {
   .list-choice {
@@ -455,18 +456,14 @@ body {
   text-align: center;
 }
 
-.main-layout {
-  height: 100vh;
-  text-align: center;
-}
-.main-layout h1 {
-  padding-top: 3rem;
+h1 {
+  padding-top: 1rem;
 }
 
 #container-general {
   position: relative;
   margin-inline: auto;
-  width: 30%;
+  width: 40%;
   aspect-ratio: 1;
   display: flex;
   justify-content: center;
@@ -474,12 +471,23 @@ body {
   transition: all 1s linear 0.1s;
   padding-bottom: 3rem;
 }
+@media only screen and (min-width: 600px) {
+  #container-general {
+    width: 30%;
+  }
+}
 
 .canvas {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
   position: absolute;
   transition: all 1s linear 0.1s;
+}
+@media only screen and (min-width: 600px) {
+  .canvas {
+    width: 50%;
+    height: 50%;
+  }
 }
 
 .big-triangle-1 {
@@ -526,12 +534,16 @@ body {
 
 .btn {
   border: 2px solid black;
-  padding: 5px 15px;
-  border-radius: 10px;
+  padding: 0.3rem 0.8rem;
+  border-radius: 1rem;
   color: white;
   background: black;
-  font-size: 2rem;
+  font-size: 0.8rem;
 }
+@media only screen and (min-width: 600px) {
+  .btn {
+    font-size: 2rem;
+  }
 .btn:hover {
   background-color: grey;
   text-decoration: none;
