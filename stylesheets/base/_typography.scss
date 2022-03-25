@@ -3,5 +3,7 @@
  */
 body {
   color: $text-color;
-  font: normal / 1.4 $text-font-stack;
+  font: normal / 1 $text-font-stack;
+  font-size: 1rem;
+  text-align: center;
 }
