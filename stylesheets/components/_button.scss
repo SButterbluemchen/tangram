@@ -1,7 +1,6 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
-
 .btn {
   border: 2px ;
   padding: 5px 15px;
@@ -12,6 +11,10 @@
   box-shadow: 0, 2px, 5px rgb(0,0,0);
   &:hover{
     background-color: grey;
-    
+    text-decoration: none;
   }
+}
+
+.active {
+  background: linear-gradient(90deg, rgba(198,6,6,1) 0%, rgba(9,121,26,1) 35%, rgba(255,239,0,1) 100%);
 }

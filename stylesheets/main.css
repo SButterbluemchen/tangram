@@ -380,7 +380,9 @@ a:hover, a:active, a:focus {
  */
 body {
   color: #222222;
-  font: normal/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font: normal/1 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 1rem;
+  text-align: center;
 }
 
 /**
@@ -494,7 +496,7 @@ body {
 #container-general {
   position: relative;
   margin-inline: auto;
-  width: 30%;
+  width: 40%;
   aspect-ratio: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -509,13 +511,24 @@ body {
   transition: all 1s linear 0.1s;
   padding-bottom: 3rem;
 }
+@media only screen and (min-width: 600px) {
+  #container-general {
+    width: 30%;
+  }
+}
 
 .canvas {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
   position: absolute;
   -webkit-transition: all 1s linear 0.1s;
   transition: all 1s linear 0.1s;
+}
+@media only screen and (min-width: 600px) {
+  .canvas {
+    width: 50%;
+    height: 50%;
+  }
 }
 
 .big-triangle-1 {
@@ -574,6 +587,11 @@ body {
 
 .btn:hover {
   background-color: grey;
+  text-decoration: none;
+}
+
+.active {
+  background: linear-gradient(90deg, #c60606 0%, #09791a 35%, #ffef00 100%);
 }
 
 .tree .big-triangle-1 {

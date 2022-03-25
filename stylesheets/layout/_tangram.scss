@@ -10,26 +10,32 @@ body{
     margin: 15px;
     text-align: left;
   }
-}
 
 #container-general {
   position: relative;
   margin-inline: auto;
-  width: 30%;
+  width: 40%;
   aspect-ratio: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 1s linear 0.1s;
   padding-bottom: 3rem;
+  @media only screen and (min-width: 600px) {
+    width: 30%;
+  }
 
 }
 
 .canvas {
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     position: absolute;
     transition: all 1s linear 0.1s;
+    @media only screen and (min-width: 600px) {
+      width: 50%;
+      height: 50%;
+    }
 }
 
 .big-triangle-1 {
